@@ -1,0 +1,333 @@
+.win-widget * {
+    box-sizing: border-box;
+}
+
+.win-widget {
+    box-sizing: border-box;
+    margin: 25px auto;
+    width: 100%;
+    /*max-width: 640px;*/
+    font-size: 14px;
+    padding: 25px;
+    border: 1px dotted #ccc;
+}
+
+.win-widget form:focus {
+    outline: none;
+}
+
+.win-widget h3 {
+    color: #c0392b;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+}
+
+.win-widget hr {
+  margin-bottom: 2em;
+}
+
+.win-widget .required {
+    color: #777;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 512px) {
+    .win-widget {
+        font-size: 16px;
+    }
+
+    .win-widget h3 {
+        font-size: 30px;
+    }
+
+    .win-widget .required {
+        font-size: 11px;
+    }
+
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.win-widget input[type="checkbox"],
+.win-widget input[type="radio"] {
+    display: none;
+}
+
+.win-donate .donate-option {
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 2em;
+    background: #ccc;
+    cursor: pointer;
+    color: #777;
+    border-bottom: 2px solid #a6a6a6;
+}
+
+.win-donate input[type="radio"]:checked + .donate-option {
+    background: #f0f0f0;
+    border-color: #f1c40f;
+    font-weight: bold;
+    color: black;
+}
+
+.win-widget .stages {
+  padding: 5px;
+  background-color: #f0f0f0;
+  margin: 0 0 2em;
+  overflow: hidden;
+}
+
+.win-widget .stages li {
+  list-style-position: inside;
+  text-align: center;
+  position: relative;
+}
+
+.win-widget .stages li:after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  transform: rotate(45deg);
+  display: block;
+  position: absolute;
+  top: -1px;
+  right: -8px;
+}
+
+.win-widget .stages li:last-of-type:after {
+  display: none;
+}
+
+.win-widget .col {
+    float: left;
+}
+
+.win-widget .col-1-2,
+.win-widget .col-1-3 {
+    width: 100%;
+}
+
+@media screen and (min-width: 512px) {
+    .win-widget .form-group {
+        padding-bottom: 20px;
+    }
+
+    .win-widget .col-1-2 {
+        width: 50%;
+        padding: 0 10px 0 0;
+    }
+
+    .win-widget .col-1-3 {
+        width: 33.33%;
+        padding: 0 10px 0 0;
+    }
+
+    .win-widget .col-1-2:last-of-type {
+        padding: 0 0 0 10px;
+    }
+}
+
+.win-widget .extra-pad {
+    margin-bottom: 0.5em;
+}
+
+.win-widget .amount-option {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 48px;
+  background: #ccc;
+  border: 2px dotted #bbb;
+  width: 170px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.win-widget .amount-option:last-of-type {
+  width: 280px;
+  margin-right: 0;
+}
+
+.win-widget input[type="radio"]:checked + .amount-option {
+  /*background: url("../img/tick.png") #f0f0f0 no-repeat 10px 50%;*/
+  background: #f0f0f0;
+  border-color: #f1c40f;
+  border-style: solid;
+  font-weight: bold;
+  color: black;
+  /*padding-left: 16px;*/
+}
+
+.win-widget .checkbox {
+    background-color: white;
+    background-size: 25px;
+    border: 2px solid #a6a6a6;
+    border-radius: 0;
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin-top: 8px;
+    margin-right: 10px;
+    height: 25px;
+    transition: all 0.1s ease;
+    width: 25px;
+    background-position: center;
+}
+
+.win-widget .checkbox:hover,
+.win-widget .checkbox:focus {
+    border-color: #f1c40f;
+}
+
+.win-widget .checkbox.checked {
+    background: url("../img/tick.png") white no-repeat;
+    background-size: 15px;
+    background-position: center;
+}
+
+.win-widget input[type="text"] {
+    background-color: white;
+    border: 2px solid #a6a6a6;
+    border-radius: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    height: 36px;
+    padding: 0 8px;
+    transition: all 0.1s ease;
+    width: 100%;
+    outline: none;
+}
+
+.win-widget input[type="text"].amount {
+    width: 75px;
+}
+
+.win-widget input[type="text"]:hover {
+    border-color: #f1c40f;
+}
+
+
+.win-widget input[type="text"]:focus {
+    border-color: #f1c40f;
+}
+
+.win-widget input[type="text"]:focus {
+    border-left-width: 20px;
+}
+
+.win-widget input[type="text"].error,
+.win-widget input[type="text"].error:focus {
+    border-color: #c0392b;
+    box-shadow: 0 0 10px 2px rgba(192, 57, 43, 0.4);
+}
+
+.win-widget select {
+    -webkit-appearance: menulist-button;
+    background-color: white;
+    border-width: 2px;
+    display: inline-block;
+    font-size: 14px;
+    height: 36px;
+    outline: none;
+    transition: all 0.1s ease;
+    vertical-align: center;
+}
+
+.win-widget select:hover {
+    border-color: #f1c40f;
+    cursor: pointer;
+}
+
+.win-widget select {
+  width: 100%;
+}
+
+.win-widget select.input-inline {
+    width: auto;
+}
+
+.win-widget label span {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.win-widget .submit {
+    background: #e74c3c;
+    border: 2px solid #c0392b;
+    border-radius: 0;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    float: right;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    width: 100%;
+    vertical-align: center;
+    z-index: 0;
+}
+
+.win-widget .submit:disabled {
+    cursor: not-allowed;
+    opacity: 0.2;
+}
+
+.win-widget .submit img {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.win-widget input,
+.win-widget select {
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 512px) {
+    .win-widget input[type="text"],
+    .win-widget select,
+    .win-widget label span,
+    .win-widget .submit {
+        font-size: 16px;
+    }
+
+    .win-widget input,
+    .win-widget select {
+        margin-bottom: 0;
+    }
+}
+
+.win-widget #validation {
+    background-color: #c0392b;
+    clear: both;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 0.5em;
+    border-radius: 0;
+    text-align: center;
+}
+
+.win-widget #validation p {
+    margin: 0;
+}

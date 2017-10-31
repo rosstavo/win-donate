@@ -1,0 +1,7 @@
+{
+    "require": {
+        "paypal/rest-api-sdk-php": "1.*",
+        "gocardless/gocardless-pro": "~1.1",
+        "phpmailer/phpmailer": "~6.0"
+    }
+}
