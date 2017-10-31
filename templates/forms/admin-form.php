@@ -144,12 +144,18 @@
                 <tr>
                     <th scope="row">Sandbox:</th>
                     <td>
+                        <label for="win_gocardless_sandbox_access">Access Token</label>
+                    </td>
+                    <td>
                         <input type="text" value="<?php echo get_option( 'win_gocardless_sandbox_access' ); ?>" name="win_gocardless_sandbox_access" class="regular-text" />
                     </td>
                 </tr>
 
                 <tr>
                     <th scope="row">Live:</th>
+                    <td>
+                        <label for="win_gocardless_live_access">Access Token</label>
+                    </td>
                     <td>
                         <input type="text" value="<?php echo get_option( 'win_gocardless_live_access' ); ?>" name="win_gocardless_live_access" class="regular-text" />
                     </td>

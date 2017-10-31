@@ -20,10 +20,6 @@ $countries = explode(',', get_option( 'win_donate_countries' ) );
     <?php endif; ?>
 
     <form action="<?php echo esc_url( $_SERVER['REQUEST_URI'] ); ?>" method="post" id="donate-form">
-        <input type="radio" name="donate-option" value="one-off" id="one-off" class="radio-button" checked>
-        <label for="one-off" class="donate-option one-off">One-off</label>
-        <input type="radio" name="donate-option" value="monthly" id="monthly" class="radio-button">
-        <label for="monthly" class="donate-option monthly">Monthly</label>
 
         <span id="validation"></span>
 

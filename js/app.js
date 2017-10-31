@@ -17,23 +17,6 @@
     $('#validation').hide();
     var formLink = $('#donate-form .submit').attr("name");
 
-    // Selects whether to display the One-off or Monthly donation forms
-
-    $('.radio-button').click(function() {
-
-        if ($(this).attr('id') == 'one-off') {
-
-            formLink = formLink.replace("gocardless", "paypal");
-            $('#donate-form .submit').attr("name", formLink);
-
-        } else {
-
-            formLink = formLink.replace("paypal", "gocardless");
-            $('#donate-form .submit').attr("name", formLink);
-
-        }
-    });
-
     $('input[type="radio"] + label').children('input[type="text"]').click(function() {
         $(this).parent('label').siblings('input[type="radio"]').prop('checked', true);
     });
